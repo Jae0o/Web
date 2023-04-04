@@ -66,53 +66,12 @@ button {
 
 /* ------------------------------------------------------------------------------------------------ */
 
-head {
+header {
     width: 100vw;
     height: 100vh;
-
-    border: var(--test-border);
-}
-
-.navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    color: var(--color-grey);
-    padding: 0;
-
 
     border: var(--test-border);
-}
-
-.nav_left {
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-
-
-    border: var(--test-border);
-}
-
-.icon-spin2 {
-    font-size: var(--font-large);
-}
-
-.nav_left_list {
-    display: flex;
-    justify-content: space-between;
-    font-size: var(--font-semi-medium);
-}
-
-.nav_left_list>li {
-    padding-left: 1.5rem;
-}
-
-.nav_title {
-    font-size: var(--font-semi-medium);
-}
-
-.nav_right {
-    display: flex;
-    font-size: var(--font-semi-medium);
-    padding: 1rem;
 }
