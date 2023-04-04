@@ -5,49 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/hover.css">
     <title>Web Copy _first</title>
 </head>
 
 <body>
 
-    <header>
+    <header id="header">
         <!-- nav bar-->
-        <nav class="navbar">
+        <nav>
             <!-- nav 왼쪽 -->
             <div class="nav_left">
                 <i class="icon-spin2 animate-spin"></i>
-                <ul class="nav_left_list">
-                    <li>develop<i class="icon-down-dir"></i></li>
-                    <li>DevOps<i class="icon-down-dir"></i></li>
-                    <li>Devkit<i class="icon-down-dir"></i></li>
-                </ul>
+                <ul>
+                    <li>
+                        <a>
+                            develop<i class="icon-down-dir"></i>
+                        </a>
+                    </li>
+                    <li><a>
+                            DevOps<i class="icon-down-dir"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Devkit<i class="icon-down-dir"></i>
+                        </a>
+                    </li>
             </div>
             <!-- nav 중앙 이름? -->
             <div class="nav_title">practice copy page</div>
             <!-- nav 오른쪽 -->
             <div class="nav_right">
-                <div>page<i class="icon-down-dir"></i></div>
-                <button class="nav_button"><i class="icon-search"></i></button>
+                <a>
+                    page<i class="icon-down-dir"></i>
+                </a>
+                <button><i class="icon-search"></i></button>
             </div>
         </nav>
         <!-- 메인 페이지 중앙 -->
-        <div class="head_deco1">
+        <div class="header_main">
             <div class="main_top">practice everyday</div>
             <h1 class="main_title">Hello world !<br>Let's Get it Java| </h1>
-            <div class="main_deco2">
+            <div class="main_icon1">
                 <i class="icon-apple"></i>
             </div>
             <p class="main_subtitle">
                 이 페이지는 연습을 위해 맘에 드는 페이지를 카피해 만들었습니다!
             </p>
-            <div class="main_deco3">
+            <div class="main_icon2">
                 <i class="icon-down-dir"></i>
             </div>
-            <!-- 고정되어 상단 혹은 여러 옵션이 넣어질곳  -->
-            <button class="main_button"><i class="icon-compass"></i></button>
         </div>
     </header>
     <main>
@@ -95,8 +106,9 @@
         </article>
     </main>
 
-
-
+    <a class="back_button hvr-wobble-vertical" href="#header">
+        <i class="icon-up-1"></i>
+    </a>
 </body>
 
 </html>

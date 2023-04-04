@@ -1,0 +1,231 @@
+:root {
+    /* color */
+    --color-yellow: rgb(254, 191, 51);
+    --color-grey: rgb(155, 155, 155);
+    --color-blue: rgb(41, 54, 254);
+    --color-red: rgb(241, 60, 78);
+    --color-green: rgb(46, 155, 101);
+    --color-black: #000000;
+    --color-white: #ffffff;
+
+    /* font weight */
+    --weight-medium: 800;
+    --weight-semi-medium: 600;
+    --weight-regular: 1rem;
+
+    /* radius */
+    --size-radius-large: 0.8rem;
+    --size-radius-medium: 0.5rem;
+    --size-radius-regular: 0.3rem;
+
+    /* animation */
+    --animation-duration: 300ms;
+
+    /* font size */
+    --font-large: 1.8rem;
+    --font-semi-large: 1.6rem;
+    --font-medium: 1.4rem;
+    --font-semi-medium: 1.2rem;
+    --font-regular: 1rem;
+    --font-small: 0.9rem;
+    --font-micro: 0.8rem;
+
+
+
+    /* test border */
+    --test-border: red 0.1rem solid;
+}
+
+/* universal tags */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "fontello";
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* header */
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* nav bar */
+header>nav {
+    overflow: hidden;
+    position: fixed;
+    width: 75vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    border: var(--color-grey) solid 0.05rem;
+    border-radius: 1.5rem;
+    color: var(--color-grey);
+    font-size: var(--font-semi-medium);
+}
+
+.nav_left {
+    width: 30vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav_left ul {
+    display: flex;
+
+}
+
+.nav_left>i {
+    margin-left: 0.5rem;
+    font-size: var(--font-medium);
+}
+
+.nav_left ul li a {
+    padding: 10vh 0 10vh 1rem;
+}
+
+.nav_title {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_right {
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav_right a {
+    padding: 5vh 1rem 5vh 1rem;
+}
+
+.nav_right>button {
+    padding: 5vh 0.5rem 5vh 0;
+}
+
+.header_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+
+    border: var(--test-border);
+}
+
+
+.back_button {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+
+    color: var(--color-grey);
+
+    border: var(--color-grey) solid 0.1rem;
+    border-radius: 50%;
+}
+
+.back_button:hover {
+    background-color: var(--color-white);
+    border: #000000 0.1rem solid;
+    color: #000000;
+}
+
+.back_button>i {
+    align-self: center;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* ---------------------------- animation
+--------------------------------------- */
+
+@keyframes hvr-wobble-vertical {
+    16.65% {
+        /* -webkit-transform: translateY(8px); */
+        transform: translateY(8px);
+    }
+
+    33.3% {
+        /* -webkit-transform: translateY(-6px); */
+        transform: translateY(-6px);
+    }
+
+    49.95% {
+        /* -webkit-transform: translateY(4px); */
+        transform: translateY(4px);
+    }
+
+    66.6% {
+        /* -webkit-transform: translateY(-2px); */
+        transform: translateY(-2px);
+    }
+
+    83.25% {
+        /* -webkit-transform: translateY(1px); */
+        transform: translateY(1px);
+    }
+
+    100% {
+        /* -webkit-transform: translateY(0); */
+        transform: translateY(0);
+    }
+}
+
+.hvr-wobble-vertical {
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-wobble-vertical:hover,
+.hvr-wobble-vertical:focus,
+.hvr-wobble-vertical:active {
+    animation-name: hvr-wobble-vertical;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
