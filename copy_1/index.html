@@ -14,19 +14,86 @@
 <body>
 
     <head>
+        <!-- nav bar-->
         <nav class="navbar">
-            <div class="nav_list_left">
+            <!-- nav 왼쪽 -->
+            <div class="nav_left">
                 <i class="icon-spin2 animate-spin"></i>
-                <ul>
-                    <li>develop</li>
-                    <li>DevOps</li>
-                    <li>Devkit</li>
+                <ul class="nav_left_list">
+                    <li>develop<i class="icon-down-dir"></i></li>
+                    <li>DevOps<i class="icon-down-dir"></i></li>
+                    <li>Devkit<i class="icon-down-dir"></i></li>
                 </ul>
             </div>
-            <div class="nav_title"></div>
-            <div class="nav__list_right"></div>
+            <!-- nav 중앙 이름? -->
+            <div class="nav_title">practice copy page</div>
+            <!-- nav 오른쪽 -->
+            <div class="nav_right">
+                <div>page<i class="icon-down-dir"></i></div>
+                <button class="nav_button"><i class="icon-search"></i></button>
+            </div>
         </nav>
+        <!-- 메인 페이지 중앙 -->
+        <div class="head_deco1">
+            <div class="main_top">practice everyday</div>
+            <h1 class="main_title">Hello world !<br>Let's Get it Java| </h1>
+            <div class="main_deco2">
+                <i class="icon-apple"></i>
+            </div>
+            <p class="main_subtitle">
+                이 페이지는 연습을 위해 맘에 드는 페이지를 카피해 만들었습니다!
+            </p>
+            <div class="main_deco3">
+                <i class="icon-down-dir"></i>
+            </div>
+            <!-- 고정되어 상단 혹은 여러 옵션이 넣어질곳  -->
+            <button class="main_button"><i class="icon-compass"></i></button>
+        </div>
     </head>
+    <main>
+        <!-- 포스팅과 포스팅 멘트 -->
+        <article class="posting">
+            <!-- 왼쪽 -->
+            <section class="posting_count">
+                <!-- 상단 -->
+                <div class="posting_count_top">
+                    <!-- 총 방문자 -->
+                    <ul class="postin_count_list">
+                        <li class="count_list_icon"><i class="icon-users"></i></li>
+                        <li class="count_list_number">명</li>
+                        <li class="count_list_title">총 방문자</li>
+                    </ul>
+                    <!-- 총 포스팅 -->
+                    <ul class="postin_count_list">
+                        <li class="count_list_icon"><i class="icon-keyboard"></i></li>
+                        <li class="count_list_number">명</li>
+                        <li class="count_list_title">총 포스팅</li>
+                    </ul>
+                </div>
+                <!-- 하단 -->
+                <div class="posing_count_bottom">
+                    <!-- 구독자 -->
+                    <ul class="postin_count_list">
+                        <li class="count_list_icon"><i class="icon-emo-thumbsup"></i></li>
+                        <li class="count_list_number">명</li>
+                        <li class="count_list_title">구독자</li>
+                    </ul>
+                    <!-- 블로그 운영 일자-->
+                    <ul class="postin_count_list">
+                        <li class="count_list_icon"><i class="icon-calendar-empty"></i></li>
+                        <li class="count_list_number">명</li>
+                        <li class="count_list_title">블로그 운영</li>
+                    </ul>
+                </div>
+
+            </section>
+            <!-- 오른쪽 -->
+            <section class="posting_ment">
+                <h2> 여러분들의 방문을<br>진심으로 환영 합니다</h2>
+                <p>WEB 개발에 있어 다양한 개발 지식을 다루는 전문적인 블로그가<br>되기 위해 노력하겠습니다.😀</p>
+            </section>
+        </article>
+    </main>
 
 
 

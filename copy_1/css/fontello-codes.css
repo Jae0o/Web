@@ -18,7 +18,10 @@
 .icon-left-1:before { content: '\e810'; } /* '' */
 .icon-up-1:before { content: '\e811'; } /* '' */
 .icon-right-1:before { content: '\e812'; } /* '' */
+.icon-search:before { content: '\e813'; } /* '' */
 .icon-spin2:before { content: '\e831'; } /* '' */
 .icon-keyboard:before { content: '\f11c'; } /* '' */
 .icon-calendar-empty:before { content: '\f133'; } /* '' */
+.icon-compass:before { content: '\f14e'; } /* '' */
+.icon-doc-text-inv:before { content: '\f15c'; } /* '' */
 .icon-apple:before { content: '\f179'; } /* '' */
