@@ -110,6 +110,12 @@ header>nav {
 }
 
 .nav_left ul li a {
+    display: flex;
+    padding: 10vh 0 10vh 1rem;
+    cursor: pointer;
+}
+
+.nav_left ul li a:hover {
     padding: 10vh 0 10vh 1rem;
 }
 
@@ -180,9 +186,12 @@ header>nav {
 
 
 
+
 /* ---------------------------- animation
 --------------------------------------- */
 
+
+/* wobble vertical */
 @keyframes hvr-wobble-vertical {
     16.65% {
         /* -webkit-transform: translateY(8px); */
@@ -226,6 +235,49 @@ header>nav {
 .hvr-wobble-vertical:active {
     animation-name: hvr-wobble-vertical;
     animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+/* wobble to top right */
+
+@keyframes hvr-wobble-to-top-right {
+    16.65% {
+        transform: translate(8px, -8px);
+    }
+
+    33.3% {
+        transform: translate(-6px, 6px);
+    }
+
+    49.95% {
+        transform: translate(4px, -4px);
+    }
+
+    66.6% {
+        transform: translate(-2px, 2px);
+    }
+
+    83.25% {
+        transform: translate(1px, -1px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.hvr-wobble-to-top-right {
+    vertical-align: middle;
+    transform: all perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-wobble-to-top-right:hover,
+.hvr-wobble-to-top-right:focus,
+.hvr-wobble-to-top-right:active {
+    animation-name: hvr-wobble-to-top-right;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
 }
